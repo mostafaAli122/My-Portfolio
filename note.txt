@@ -1,3 +1,4 @@
 npm init //to create package.json
 npm i node-sass //to create node modules folder added dependaces of node-sass
 node run sass
+touch (filename).gitignore 
