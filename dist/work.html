@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+      
+    <link rel="stylesheet" href="css/main.css">
+    <title>View My Work</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+          $( function() {
+            $( "#dialog" ).dialog({
+              autoOpen: false,
+              show: {
+                effect: "blind",
+                duration: 1000
+              },
+              hide: {
+                effect: "explode",
+                duration: 1000
+              }
+            });
+        
+            $( "#opener" ).on( "click", function() {
+              $( "#dialog" ).dialog( "open" );
+            });
+          } );
+          $( function() {
+            $( "#dialog2" ).dialog({
+              autoOpen: false,
+              show: {
+                effect: "blind",
+                duration: 1000
+              },
+              hide: {
+                effect: "explode",
+                duration: 1000
+              }
+            });
+        
+            $( "#opener2" ).on( "click", function() {
+              $( "#dialog2" ).dialog( "open" );
+            });
+          } );
+          $( function() {
+            $( "#dialog3" ).dialog({
+              autoOpen: false,
+              show: {
+                effect: "blind",
+                duration: 1000
+              },
+              hide: {
+                effect: "explode",
+                duration: 1000
+              }
+            });
+        
+            $( "#opener3" ).on( "click", function() {
+              $( "#dialog3" ).dialog( "open" );
+            });
+          } );
+          $( function() {
+            $( "#dialog4" ).dialog({
+              autoOpen: false,
+              show: {
+                effect: "blind",
+                duration: 1000
+              },
+              hide: {
+                effect: "explode",
+                duration: 1000
+              }
+            });
+        
+            $( "#opener4" ).on( "click", function() {
+              $( "#dialog4" ).dialog( "open" );
+            });
+          } );
+          $( function() {
+            $( "#dialog5" ).dialog({
+              autoOpen: false,
+              show: {
+                effect: "blind",
+                duration: 1000
+              },
+              hide: {
+                effect: "explode",
+                duration: 1000
+              }
+            });
+        
+            $( "#opener5" ).on( "click", function() {
+              $( "#dialog5" ).dialog( "open" );
+            });
+          } );
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="portrait"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About Me
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="work.html" class="nav-link">
+                        My Work
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">
+                        How To Reach Me
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="work">
+        <h1 class="lg-heading">
+            My
+            <span class="text-secondary">Work</span>
+        </h1>
+        <h2 class="sm-heading">
+            Check out some of my projects...
+        </h2>
+        <div class="projects">
+            <div class="item">
+                <a href="#!">
+                    <img src="img/projects/project1.jpg" alt="Project">
+                </a>
+                <!--Creates the popup body-->
+                <div id="dialog" title="Project Description">
+                        <h3>Project Name : </h3>
+                        <p>Social Network Using Laravel 5.3 and Vuejs 2.0</p>
+                        <h3>Project Description : </h3>
+                        <h5>build a complete application with the Laravel 5.3 and Vuejs 2.0</h5>
+                        <ul>  
+                            
+                            <li>set up the default  authentication and modified it to fit my needs </li>
+                            <li> display the user's profile, and also display user img from Laravel's local storage </li>
+                            <li> create a profiles table and setup relationships between the users table and the profiles table </li>
+                            <li> make sure every time a new user is created, a profile is automatically created for that user </li>
+                            <li> created a form for updating user profiles </li>
+                            <li> updated user's profile, uploading the img to laravel's default storage </li>
+                            <li> display the user's profile information on the profiles page </li>
+                            <li> implemented noty notifications with my application </li>
+                            <li> created a friendships table, and model with a trait to help me implement friendships </li>
+                            <li> implemented the add_friend and accept_friend methods for friendships functionality </li>
+                            <li> implemented a method to get all the friends for this user </li>
+                            <li> implemented a method to get all the pending friendship requests for a user , and also check if a user is friends with another </li>
+                            <li> created a Friend vue component, and as soon as it is mounted, it send ajax request to laravel, to get the relationship status for two users</li>
+                            <li> set up Friendships Controller and checked relaitonship status using vue resource. We specified the state of my component depending on the response from my controller</li>
+                            <li> used the response from the ajax request to display the appropriate data concerning relationship status on my profile page</li>
+                            <li> sent an ajax request to laravel, added a friend, and with vue js , updated my view accordingly</li>
+                            <li> use vuejs to accept friendships for my application </li>
+                            <li> used noty to display a notification to my user when a friend request is sent or accepted</li>
+                            <li> set up mailtrap, pusher and database for laravel 5.3 notifications</li>
+                            <li>  used laravel echo to listen to application notifications broadcast to me</li>
+                            <li>  sent out notifications in laravel 5.3 to all channels </li>
+                            <li>  created a new notification to accept friend requests </li>
+                            <li>  implemented laravel 5.3 queues for notifications </li>
+                            <li>  installed a notification sound for my app notifications</li>
+                            <li>  installed vuex into my application </li>
+                            <li>  created an unreadNotifications component </li>
+                            <li>  craeted a posts table and migration, and a vue component for creating posts</li>
+                            <li>  created posts in vuejs component, using data bindings too</li>
+                            <li>  saved posts into database using laravel and vuejs component </li>
+                            <li>  created a new feed.vue component</li>
+                            <li>  created an end point that returns the feed of a user </li>
+                            <li>  displayed the news feed using the data from my database </li>
+                            <li>  displayed user data and timestamps for each post in the feed</li>
+                            <li>  make method in vuejs to like posts in real time </li>
+                            <li>  make method to unlike posts in my vue component </li>
+                            <li>  sort feed array using a built in php function (usort)</li>
+                            <li>  seeder for my user's table in preparation for my search with laravel scout </li>
+                            <li>  install laravel scout and imported data into algolia</li>
+                            <li>  algolia js client and used it with vuejs to search for users</li>
+                            <li>  formatting search results in a better way</li>
+
+                        </ul>
+                    <!--popup's github button-->
+                        <a href="https://github.com/mostafaAli122/Social-Network-Using-Laravel-And-Vuejs" target="_blank" class="btn-dark">
+                            <i class="fab fa-github"></i> Github
+                        </a>  
+                 </div>
+                 <label for="item">Social Network Using Laravel 5.3 and Vuejs 2.0</label>
+                <button id="opener" class="btn-light">
+                    <i class="fas fa-eye"></i> Project
+                </button>
+                <a href="https://github.com/mostafaAli122/Social-Network-Using-Laravel-And-Vuejs" target="_blank" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+            <div class="item">
+                    <a href="#!">
+                        <img src="img/projects/project2.jpg" alt="Project">
+                    </a>
+                    <!--Creates the popup body-->
+                    <div id="dialog2" title="Project Description">
+                            <h3>Project Name : </h3>
+                            <p>Complete Blogging Content Management System</p>
+                            <h3>Project Description : </h3>
+                            <h5>build a complete Blog with the Laravel 5.3</h5>
+                            <ul>  
+                                
+                                <li>Route groups and middleware</li>
+                                <li>Data validation</li>
+                                <li>Categories Ceate,Restore,Update,Delete (CRUD)</li>
+                                <li>using Toastr notifications in laravel</li>
+                                <li>Displaying Categories in form</li>
+                                <li>Saving posts and featured image upload</li>
+                                <li>Soft deletes table setup</li>
+                                <li>Seeding default Administrator</li>
+                                <li>Setting session information</li>
+                                <li>Soft deleting _ Trashing posts , Retrieving trashed posts , Permanently deleting posts ,  Restoring trashed posts</li>
+                                <li>Updating posts</li>
+                                <li>Tags Ceate,Restore,Update,Delete (CRUD)</li>
+                                <li>Creating users , Creating profiles for users</li>
+                                <li>Editing , Update user profile</li>
+                                <li>WYSIWYG installation_ summernote</li>
+                                <li>Blog site settings</li>
+                                <li>install Disqus </li>
+                                <li>Searching posts</li>
+                                <li>AddThis installation into Blog</li>
+                                <li>Mailchimp installation </li>
+                            </ul>
+                        <!--popup's github button-->
+                            <a href="https://github.com/mostafaAli122/--Complete-Blogging-Content-Management-System" target="_blank" class="btn-dark">
+                                <i class="fab fa-github"></i> Github
+                            </a>  
+                     </div>
+                     <label for="item">Complete Blogging Content Management System</label>
+                    <button id="opener2" class="btn-light">
+                        <i class="fas fa-eye"></i> Project
+                    </button>
+                    <a href="https://github.com/mostafaAli122/--Complete-Blogging-Content-Management-System" target="_blank" class="btn-dark">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+            </div>
+            <div class="item">
+                    <a href="#!">
+                        <img src="img/projects/project3.jpg" alt="Project">
+                    </a>
+                    <!--Creates the popup body-->
+                    <div id="dialog3" title="Project Description">
+                            <h3>Project Name : </h3>
+                            <p> Advanced Forum _ Discussion Application</p>
+                            <h3>Project Description : </h3>
+                            <h5>build a  Advanced Forum _ Discussion Application with the Laravel 5.3</h5>
+                            <ul>  
+                                <li>Open Discussion (question) on specific channel (topic)</li> 
+                                <li>make replies from other users</li>
+                                <li>close discussion if there a reply Marked As best answer </li>
+                                <li>there 's middleware for admin </li>
+                            </ul>
+                        <!--popup's github button-->
+                            <a href="https://github.com/mostafaAli122/Advanced-Forum" target="_blank" class="btn-dark">
+                                <i class="fab fa-github"></i> Github
+                            </a>  
+                     </div>
+                     <label for="item">Advanced Forum _ Discussion Application</label>
+                    <button id="opener3" class="btn-light">
+                        <i class="fas fa-eye"></i> Project
+                    </button>
+                    <a href="https://github.com/mostafaAli122/Advanced-Forum" target="_blank" class="btn-dark">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+            </div>
+            <div class="item">
+                    <a href="#!">
+                        <img src="img/projects/project4.jpg" alt="Project">
+                    </a>
+                    <!--Creates the popup body-->
+                    <div id="dialog4" title="Project Description">
+                            <h3>Project Name : </h3>
+                            <p> Social Network With real time Messanger Using PHP </p>
+                            <h3>Project Description : </h3>
+                            <h5>build a  Social Network With real time Messanger Using PHP</h5>
+                            <ul>  
+                                <li>Is Aimed To Creating&Validation Accounts </li> 
+                                <li>Logging in&out Users </li>
+                                <li>Following &Unfollow Users</li>
+                                <li>Verified Accounts</li>
+                                <li>Postiong &liking Posts</li>
+                                <li>Timeline</li>
+                                <li>Posting</li>
+                                <li>Reading Comments </li>
+                                <li>Upload Profile Image With API Imgur </li>
+                                <li>Mention </li>
+                                <li>Hashtag </li>
+                                <li>sending&receiving notification</li>
+                                <li>Search Users&posts </li>
+                                <li>Sending &receiving messages </li>
+                                <li>Sending Mail  </li>
+                                <li>Designing All Pages & dealing With API too </li>
+                            </ul>
+                        <!--popup's github button-->
+                            <a href="https://github.com/mostafaAli122/Social-Network-With-real-time-Messanger" target="_blank" class="btn-dark">
+                                <i class="fab fa-github"></i> Github
+                            </a>  
+                     </div>
+                     <label for="item">Social Network With real time Messanger Using PHP</label>
+                    <button id="opener4" class="btn-light">
+                        <i class="fas fa-eye"></i> Project
+                    </button>
+                    <a href="https://github.com/mostafaAli122/Social-Network-With-real-time-Messanger" target="_blank" class="btn-dark">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+            </div>
+            <div class="item">
+                    <a href="#!">
+                        <img src="img/projects/project5.jpg" alt="Project">
+                    </a>
+                    <!--Creates the popup body-->
+                    <div id="dialog5" title="Project Description">
+                            <h3>Project Name : </h3>
+                            <p> Complete Todo App </p>
+                            <h3>Project Description : </h3>
+                            <h5>Build a  Complete Todo App With Laravel</h5>
+                            <ul>  
+                                <li>Creating Todo</li> 
+                                <li>Updating Todo</li> 
+                                <li>Deleting Todo</li> 
+                            </ul>
+                        <!--popup's github button-->
+                            <a href="https://github.com/mostafaAli122/Complete-Todo-App" target="_blank" class="btn-dark">
+                                <i class="fab fa-github"></i> Github
+                            </a>  
+                     </div>
+                     <label for="item">Build a  Complete Todo App With Laravel</label>
+                    <button id="opener5" class="btn-light">
+                        <i class="fas fa-eye"></i> Project
+                    </button>
+                    <a href="https://github.com/mostafaAli122/Complete-Todo-App" target="_blank" class="btn-dark">
+                        <i class="fab fa-github"></i> Github
+                    </a>
+            </div>
+            
+    </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2018
+    </footer>
+
+    <script src="js/main.js"></script>
+   
+</body>
+
+</html>
