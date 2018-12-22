@@ -2,3 +2,10 @@ npm init //to create package.json
 npm i node-sass //to create node modules folder added dependaces of node-sass
 node run sass
 touch (filename).gitignore 
+
+///
+to deploy my portfolio 
+first Run: npm i gh-pages
+in package.json
+"homepage": "link_for_project_on_github"
+"deploy":"gh-pages "
